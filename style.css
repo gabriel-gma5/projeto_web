@@ -1,0 +1,122 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #ffffff;
+    color: #e29e9c;
+    padding: 1px;
+    text-align: center;
+    background-image: url("https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3cfdc006-5c5a-4e3e-b575-6f6db5bd2c0c_498x367.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    font-family: 'Agdasima', sans-serif;
+    font-size: large;
+    position: relative;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.3); /* Define a cor do fade */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* Estilos das seções */
+  section {
+    padding: 20px;
+    margin-bottom: -2px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* Cor inicial das seções */
+    color: transparent; /* Texto inicialmente transparente */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições de cor */
+    flex-wrap: wrap;
+    font-family: 'Be';
+  }
+  
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradiente de cor para o efeito de "lanterna" */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  section:hover {
+    background-color: rgba(0, 0, 0, 0.863); /* Cor do efeito de lanterna */
+    color: #4bda13d7; /* Cor do texto quando o cursor estiver sobre a seção */
+  }
+  
+  section:hover::before {
+    opacity: 0.2;
+  }
+  .hobbies {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 100px;
+  }
+  
+  .img_hobby1{
+    background-image: url('https://media.istockphoto.com/id/1078074092/pt/foto/dumbbell-weights-on-black-background.jpg?s=170667a&w=0&k=20&c=xophR2V4CeYcmoTE_B4U7rpsBfUXKxbEzOnNhNTjkLc=');
+  }
+  .column {
+    margin: 0 100px; /* Espaçamento horizontal entre os itens 1 e 2 */
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #080808cb;
+    color: #db2c0ef6;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3cfdc006-5c5a-4e3e-b575-6f6db5bd2c0c_498x367.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Flexibilização para diferentes tamanhos de tela */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  .interesses-background {
+    background-image: url("https://media.istockphoto.com/id/1369878062/pt/vetorial/question-mark.jpg?s=612x612&w=0&k=20&c=YWuijE-mwv22KSWroC0t7L7j1jjo_JfkOGWAUH1JJq0=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .segredo{
+    text-align: center;
+  }
+
+  
+  
+  
